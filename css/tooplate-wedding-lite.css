@@ -9,9 +9,12 @@ https://www.tooplate.com/view/2131-wedding-lite
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+
+
+
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #ff5500;
+  --primary-color:                #77183D;
   --secondary-color:              #f1c522;
   --section-bg-color:             #f9f9f9;
   --custom-btn-bg-color:          #cb7575;
@@ -266,9 +269,10 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  /*background: var(--custom-btn-bg-color);*/
+  background-color: white;
   border: 0;
-  color: var(--white-color);
+  color: #77183D;
   font-family: var(--title-font-family);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-bold);
@@ -291,14 +295,14 @@ strong {
   transition: all 0.5s;
 }
 
-.custom-btn:hover::after {
+/* .custom-btn:hover::after {
   transform: translate(0);
-}
+} */
 
 .custom-btn:hover {
-  background: var(--secondary-color);
+  background: var( --custom-btn-bg-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  color: var(--white-color);
+  color:white;
 }
 
 
@@ -427,15 +431,16 @@ strong {
 -----------------------------------------*/
 .hero-container {
   
-  background-color: rgba(13, 49, 209, 0.404);
+  background-color: #77183D;
   background-image: url('../images/a28e8fcb-7511-4db8-937e-11c6f9a8ba61-removebg.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: var(--border-radius-small);
   position: relative;
   overflow: hidden;
-  padding: 50px;
+  padding: 150px;
   height: calc(130vh - 28px);
+  max-height: 50rem;
 }
 
 .hero-container h2 {
@@ -453,6 +458,10 @@ strong {
   position: relative;
   overflow: hidden;
   text-align: left;
+  height: 7rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .save-the-date-title {
@@ -460,10 +469,13 @@ strong {
   color: var(--white-color);
   margin-bottom: 0;
   padding: 10px 20px;
+ 
 }
 
 .save-the-date-body {
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
+  text-align: center;
+  margin-top: 10px;
 }
 
 /*---------------------------------------
@@ -642,13 +654,15 @@ strong {
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
-  background: var(--secondary-color);
+  background: white;
   border-color: transparent;
+  color: #77183D;
+  border: 1px solid  #77183D;
 }
 
 .custom-form button[type="submit"]::after {
   content: "";
-  background: var(--icon-color);
+  background: none;
   border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
   position: absolute;
   top: 0;
@@ -908,4 +922,11 @@ strong {
   .hero-container {
     padding: 30px;
   }
+}
+
+
+h2.title{
+  font-family: 'Moon Dance', cursive;
+  font-weight: bold;
+  
 }
