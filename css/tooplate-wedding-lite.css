@@ -465,7 +465,7 @@ strong {
 }
 
 .save-the-date-title {
-  background: var(--primary-color);
+  background:#77183cb9;
   color: var(--white-color);
   margin-bottom: 0;
   padding: 10px 20px;
@@ -689,6 +689,7 @@ strong {
   padding-bottom: 150px;
   text-align: center;
   position: relative;
+  background-color: #77183D;
 }
 
 .site-footer::after {
